@@ -1,0 +1,10 @@
+authour: Lupus590
+This script is designed to be run on startup and checks if computers have a label.
+If it does not then it makes one based on several pieces of data which can help identify the computer.
+The format of the resulting lable is '<Advanced|Normal><Turtle|Pocket|Computer><ID>' all within 2 characters (plus id)
+If the computer already has a label and you want this script to assign a new one then you can run the script with the argument f
+
+valid arguments:
+nil = automatic detect and generate if needed
+f = force regenerate
+h = print internal program help
