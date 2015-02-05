@@ -2,4 +2,6 @@ remote connect - control computers like you are there
 GUI
 task master
 drone watcher
-turtle side script
+turtle task requesting script
+turtle movement api - make it emit turtle_moved event
+tracking script (turtle side)
