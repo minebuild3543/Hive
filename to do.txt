@@ -1,8 +1,11 @@
-remote connect - control computers like you are there
-GUI
+add to do comments to scripts
+turtle movement api - make it emit turtle_moved event
+turtle task requesting script
 task master
 drone watcher
-turtle task requesting script
-turtle movement api - make it emit turtle_moved event
 tracking script (turtle side)
-XML File Read/Writer
+remote connect - control computers like you are there, use Lyquds' nsh?
+lua table for storing user settings
+GUI
+
+migrate help docs to CC default location so that they can be loaded by the help program provided by CC
