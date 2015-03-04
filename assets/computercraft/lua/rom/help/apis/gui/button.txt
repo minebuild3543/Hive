@@ -1,4 +1,0 @@
-this api is built off direwolfs button api, and assits in the creation and use of touchscreen buttons
-
-available functions and variables:
-
