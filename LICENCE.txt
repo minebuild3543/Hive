@@ -1,3 +1,6 @@
+This licence covers all code in the Hive project except where otherwise stated.
+No warranty of any kind is included with this software.
+
 Super easy to read mode: do what you like, just let others do the same and keep my name on it (you can add yours too).
 
 http://creativecommons.org/licenses/by-sa/3.0/
