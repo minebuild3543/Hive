@@ -27,6 +27,7 @@ GUI
 migrate help docs to CC default location so that they can be loaded by the help program provided by CC?, may have problems with the help docs being in rom
 	backup option, have own help program
 
+make wiki on github repo? add one on CC wiki?
 
 this system may become an OS, I have mixed feelings about that.
 
