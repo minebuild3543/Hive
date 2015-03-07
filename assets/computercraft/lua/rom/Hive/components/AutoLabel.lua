@@ -1,4 +1,5 @@
---authour: Lupus590
+--Author: Lupus590
+
 local description = "This script is designed to be run on startup and checks if computers have a label.\n If it does not then it makes one based on several pieces of data which can help identify the computer.\n The format of the resulting lable is '<Advanced|Normal><Turtle|Pocket|Computer><ID>' all within 2 characters (plus id)\nIf the computer already has a label and you want this script to assign a new one then you can run the script with the argument f"
 
 local advance --is the computer an advanced golden computer?

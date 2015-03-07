@@ -1,4 +1,5 @@
---direwolfs button api, to be a template for my own
+--Author: DireWolf 20
+--Dire's button api, to be a template for my own, the intention is that no all code will be replaced with mine (or I get permission to use his)
 
 local mon = term
 --mon.setTextScale(1)

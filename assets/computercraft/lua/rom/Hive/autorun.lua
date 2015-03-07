@@ -1,3 +1,5 @@
+--Author: Lupus590
+
 --TODO: move to hive.lua
 
 --this file calls components of hive that should be run from startup every time

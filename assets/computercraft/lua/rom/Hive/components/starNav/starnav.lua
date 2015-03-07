@@ -1,5 +1,5 @@
 --Testing version 1.0.1
---original by: blunty666
+--Author: blunty666
 --forum post: http://www.computercraft.info/forums2/index.php?/topic/19491-starnav-advanced-turtle-pathfinding-and-environment-mapping/
 
 

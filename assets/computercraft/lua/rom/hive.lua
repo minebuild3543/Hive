@@ -1,3 +1,5 @@
+--Author: Lupus590
+
 --this is the main program, this is what users will run
 --what this program actually does is update and bootstrap the actual program
 
