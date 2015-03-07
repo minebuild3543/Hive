@@ -2,6 +2,9 @@
 *.lnk
 *.appref-ms
 
+#windows bat files
+*.bat
+
 
 #################
 ## Eclipse
