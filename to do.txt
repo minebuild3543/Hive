@@ -1,3 +1,5 @@
+TODO: everyting below
+
 make code portable, autorun folder is rom only (everything in autorun needs to move to startup or some other root file or I need to make my own auto run)
 
 
