@@ -1,5 +1,8 @@
 TODO: everything below
 
+update lama (last forum post said that it was buggy/not working in CC1.63)
+combine lama with starNav
+
 make code portable, autorun folder is rom only (everything in autorun needs to move to startup or some other root file or I need to make my own auto run)
 
 
