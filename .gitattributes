@@ -1,3 +1,6 @@
+*. linguist-language=Lua
+*.lua linguist-language=Lua
+
 # Auto detect text files and perform LF normalization
 * text=auto
 
