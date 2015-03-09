@@ -1,5 +1,7 @@
 TODO: everything below
 
+convert readme, licence, to do list to markdown format
+
 update lama (last forum post said that it was buggy/not working in CC1.63)
 combine lama with starNav
 
