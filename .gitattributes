@@ -1,6 +1,3 @@
-*. linguist-language=CC-Lua
-*.lua linguist-language=CC-Lua
-
 # Auto detect text files and perform LF normalization
 * text=auto
 
