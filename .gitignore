@@ -2,6 +2,9 @@
 *.lnk
 *.appref-ms
 
+#url links
+*.url
+
 #windows bat files
 *.bat
 
