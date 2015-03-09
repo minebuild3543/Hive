@@ -6,5 +6,7 @@ You may have noticed that the github repo is in the form of a MC resource pack. 
 
 Want to help? fork the project, make some edits, and make a pull request. If you consistently give me code that I like, I'll make you a contributor (no more requesting) (Note to self: add collaborators here: https://github.com/lupus590/Hive/settings/collaboration)
 
-The licence is included in LICENCE.txt
+The license is included in LICENSE.txt
+this project makes extensive use of other peoples code, these have there own licenses. The license deepest in the folder tree is the one that is "active" I.E. if you want to know how a file is licensed, navigate to the file and keep going up directories until you find a file named LICENSE. That file is the license for all of the files within its sibling folders.
+
 This software is provided without warranty (you know, the standard MC mod and CC code stuff)
