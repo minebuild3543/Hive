@@ -1,6 +1,6 @@
 --Author: DireWolf 20
 --Dire's button api, to be a template for my own, the intention is that no all code will be replaced with mine (or I get permission to use his)
-
+--tutorial video: https://www.youtube.com/watch?v=1nuMDtmnEjg
 local mon = term
 --mon.setTextScale(1)
 mon.setTextColor(colors.white)
