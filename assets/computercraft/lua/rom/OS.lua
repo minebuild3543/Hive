@@ -1,0 +1,2 @@
+--I'm making an OS now?
+--My notes are here: http://www.computercraft.info/forums2/index.php?/topic/22320-got-any-tips-for-making-an-os/
