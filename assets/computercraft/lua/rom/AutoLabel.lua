@@ -2,10 +2,10 @@
 
 local description = "This script is designed to be run on startup and checks if computers have a label.\n If it does not then it makes one based on several pieces of data which can help identify the computer.\n The format of the resulting label is '<Advanced|Normal><Turtle|Pocket|Computer><ID>' all within 2 characters (plus id)\nIf the computer already has a label and you want this script to assign a new one then you can run the script with the argument f"
 
-local advance --is the computer an advanced golden computer?
-local _type --is the computer a turtle, pocketPC or just a computer?
-local function genLabel()
 
+local function genLabel()
+	local advance --is the computer an advanced golden computer?
+	local _type --is the computer a turtle, pocketPC or just a computer?
 	
 	if term.isColour() then --advanced colour PC?
 		advance = "A"
@@ -22,7 +22,11 @@ local function genLabel()
 		_type = "C"
 	end
 	
-	os.setComputerLabel(advance.._type..tostring(os.getComputerID())) --append the id do that the computer has a unique label
+	if command then --command computer?
+		os.setComputerLabel("Com"..tostring(os.getComputerID()))
+	else
+		os.setComputerLabel(advance.._type..tostring(os.getComputerID())) --append the id do that the computer has a unique label
+	end
 end
 
 local function printArgs()
