@@ -5,6 +5,8 @@ convert readme, licence, to do list to markdown format
 update lama (last forum post said that it was buggy/not working in CC1.63)
 combine lama with starNav
 
+use Lyqyd's touch point API instead of DireWolf20's button API because button doesn't have a license declared
+
 make code portable, autorun folder is rom only (everything in autorun needs to move to startup or some other root file or I need to make my own auto run)
 
 
@@ -34,7 +36,7 @@ migrate help docs to CC default location so that they can be loaded by the help 
 
 make wiki on github repo? add one on CC wiki?
 
-this system may become an OS, I have mixed feelings about that.
+this system may become an ~~OS~~ _shell_, I have mixed feelings about that.
 
 multi-threading - http://www.computercraft.info/forums2/index.php?/topic/19908-run-code-in-background/
 					https://docs.google.com/document/d/1UU-bSCgLqwAQixldXmDzvEFPACaieph3qs08WreQlZs/edit
