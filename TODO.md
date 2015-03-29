@@ -5,8 +5,6 @@ convert readme, licence, to do list to markdown format
 update lama (last forum post said that it was buggy/not working in CC1.63)
 combine lama with starNav
 
-use Lyqyd's touch point API instead of DireWolf20's button API because button doesn't have a license declared
-
 make code portable, autorun folder is rom only (everything in autorun needs to move to startup or some other root file or I need to make my own auto run)
 
 
