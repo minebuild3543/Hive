@@ -1,6 +1,3 @@
-#Important
-This license only covers code authored by Lupus590, each script should have the author as the first comment (If I missed one then submit an issue on github with the script name and folder path).
-
 #The MIT License (MIT)
 
 Copyright (c) 16th March 2013 Nephi (Pseudonym: Lupus590)
