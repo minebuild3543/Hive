@@ -27,7 +27,8 @@ shell.run("AutoLabel.lua")
 	--drone(client)
 		--tracking device
 		--task executer
+	--queen(GUI)
 
 --TODO:error recovery 
-
+--likely: drop into nsh
 
