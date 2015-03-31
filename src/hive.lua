@@ -18,6 +18,8 @@ shell.run("AutoLabel.lua")
 
 --shell.setAlias() 
 
+--TODO: add an api to the global environment
+
 --TODO:launch the program
 	--nest(server)
 		--task master
