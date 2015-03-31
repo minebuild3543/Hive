@@ -2,6 +2,7 @@
 
 ###Queen - GUI
 designed for a pocket pc
+basically a remote for controlling the server
 
 ###Nest - Server
 

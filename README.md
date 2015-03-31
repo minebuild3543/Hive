@@ -3,6 +3,8 @@
 
 Hive is/will be a turtle based automation system. The user can assign jobs to different turtle types, each job can consist of multiple tasks. When a turtle finishes one job, it will request another, if none are available then it will go home.
 
+if anything goes wrong, the broken computer will (try to) drop into nsh and await for help
+
 
 #####Want to help?
 Fork the project, make some edits, and make a pull request. If you consistently give me code that I like, I'll make you a contributor (no more pull requesting) (Note to self: add collaborators here: https://github.com/lupus590/Hive/settings/collaboration)
