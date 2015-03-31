@@ -9,7 +9,12 @@ bunch of if statments checking for APIs
 	if can't load the api
 		if can't download the api
 			error? prompt to continue?
-			
+]]
+--set aliases for everything (remove the .lua extension and need for file path)	
+shell.setAlias(string alias, string program) 
+
 --launch the program
 
 --error recovery 
+
+
