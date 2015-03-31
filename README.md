@@ -1,3 +1,6 @@
+###Collaborators are welcome/wanted
+
+
 Hive is/will be a turtle based automation system. The user can assign jobs to different turtle types, each job can consist of multiple tasks. When a turtle finishes one job, it will request another, if none are available then it will go home.
 
 You may have noticed that the github repo is in the form of a MC resource pack. This is to allow easy testing, just download to a minecraft resource folder.
