@@ -9,3 +9,5 @@
 
 
 --could use grin-get or some other github downloaders from the fourms and add this as a wrapper
+
+--add a self extractor for if this is downloaded to a floppy for use on a server without HTTP enabled?
