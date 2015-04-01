@@ -41,3 +41,4 @@ this system may become an ~~OS~~ _shell_, I have mixed feelings about that.
 multi-threading - http://www.computercraft.info/forums2/index.php?/topic/19908-run-code-in-background/
 					https://docs.google.com/document/d/1UU-bSCgLqwAQixldXmDzvEFPACaieph3qs08WreQlZs/edit
 					
+BONUS: if a printer is detected, offer to print a manual
