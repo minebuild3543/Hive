@@ -1,6 +1,6 @@
 #The MIT License (MIT)
 
-Copyright (c) 16th March 2013 Nephi (Pseudonym: Lupus590)
+Copyright (c) 16th March 2015 Nephi (Pseudonym: Lupus590)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
