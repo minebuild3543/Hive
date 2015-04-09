@@ -11,3 +11,5 @@ Fork the project, make some edits, and make a pull request. If you consistently 
 
 The license is included in LICENSE.md
 this project makes extensive use of other peoples code, these have there own licenses. The license deepest in the folder tree is the one that is "active" I.E. if you want to know how a file is licensed, navigate to the file and keep going up directories until you find a file named LICENSE. That file is the license for all of the files within its sibling folders. If you find another going deeper down the file tree, then that 'new' license *overrides* the previous.
+
+tes
