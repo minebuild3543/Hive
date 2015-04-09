@@ -1,5 +1,7 @@
 ###Collaborators are welcome/wanted
+######"Start small and conquer one problem in computercraft coding at a time" -DireWolf20
 
+######Note to collaborators, try to be [CCDoc](https://github.com/lupus590/CCDoc) compliant with comments.
 
 Hive is/will be a turtle based automation system. The user can assign jobs to different turtle types, each job can consist of multiple tasks. When a turtle finishes one job, it will request another, if none are available then it will go home.
 
