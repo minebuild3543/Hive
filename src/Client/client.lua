@@ -44,7 +44,6 @@ function client.getapi()
 			local returned = err
 			env = env
 			_G["progutils"] = env
-			client.main()
 		else
 			printError("HTTP needs to be enabled!")
 			return false
@@ -64,6 +63,13 @@ function client.getapi()
 			sleep(1)
 			client.getapi()
 		end
+	else
+		local ok, err = pcall(function ()
+			client.main()
+		end)
+		if not ok then
+			client.crash(err)
+		end
 	end
 end
 
@@ -80,23 +86,70 @@ function client.main()
 	paintutils.drawImage(logo, 8, 4)
 	draw.textc(" Created by HiveDevTeam", 19, false, "red", "white")
 
+	sleep(2.5)
 
-	while true do
-		local args = { os.pullEvent() }
+	client.core.connect()
+	client.core.menu()
+end
+
+function client.core.connect()
+	local modemside = misc.find("modem")
+	if not modemside then
+		printError("No modem attached!")
+	else
+		rendet.open(modemside)
 	end
+
+	rednet.broadcast("client_connect", "hivesystem")
+	serverid, message = rednet.receive("hivesystem", 2)
+	if serverid then
+		return true
+	else
+		printError("Can't connect to server")
+	end
+end
+
+function client.draw.menuitems()
+	--##############--##############--##############--
+
+	--// Jobs
+	draw.box(3, 14, 3, 3, " ", "cyan", "cyan")
+	draw.box(3, 14, 4, 1, " ", "cyan", "cyan")
+	draw.texta("Job List",6, 4, false, "white", "cyan")
+
+	--// Destinations
+	draw.box(3, 14, 8, 3, " ", "cyan", "cyan")
+	draw.box(3, 14, 9, 1, " ", "cyan", "cyan")
+	draw.texta("Destinations",4, 9, false, "white", "cyan")
+
+	--// Turtle List
+	draw.box(19, 14, 3, 3, " ", "cyan", "cyan")
+	draw.box(19, 14, 4, 1, " ", "cyan", "cyan")
+	draw.texta("Turtles List", 20, 4, false, "white", "cyan")
+
+	--// Statistics
+	draw.box(19, 14, 8, 3, " ", "cyan", "cyan")
+	draw.box(19, 14, 9, 1, " ", "cyan", "cyan")
+	draw.texta("Statistics", 21, 9, false, "white", "cyan")
+
+	--// Job Online Store
+	draw.box(35, 14, 3, 3, " ", "cyan", "cyan")
+	draw.box(35, 14, 4, 1, " ", "cyan", "cyan")
+	draw.texta("Jobs Store", 37, 4, false, "white", "cyan")
 end
 
 function client.core.menu()
 	col.screen("white")
 	client.draw.bar("Menu")
+	client.draw.menuitems()
 
 	while true do
 		local args = { os.pullEvent() }
+		if args[1] == "timer" then
+			client.draw.bar("Menu")
+		end
 	end
 end
-
-
-
 
 -- Start Code:
 client.getapi()
