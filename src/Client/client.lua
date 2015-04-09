@@ -136,6 +136,16 @@ function client.draw.menuitems()
 	draw.box(35, 14, 3, 3, " ", "cyan", "cyan")
 	draw.box(35, 14, 4, 1, " ", "cyan", "cyan")
 	draw.texta("Jobs Store", 37, 4, false, "white", "cyan")
+
+	--// Job Online Store
+	draw.box(35, 14, 3, 3, " ", "cyan", "cyan")
+	draw.box(35, 14, 4, 1, " ", "cyan", "cyan")
+	draw.texta("Jobs Store", 37, 4, false, "white", "cyan")
+
+	--// Credits
+	draw.box(35, 14, 13, 3, " ", "cyan", "cyan")
+	draw.box(35, 14, 14, 1, " ", "cyan", "cyan")
+	draw.texta("Credits:", 38, 14, false, "white", "cyan")
 end
 
 function client.core.menu()
