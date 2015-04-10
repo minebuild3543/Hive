@@ -15,6 +15,10 @@
 ]]
 
 -- Variables:
+--[[
+	Change the variable below "emulator" to test on emulators
+]]
+emulator = true
 nTries = 0
 client = {}
 client.__index = client
@@ -27,10 +31,12 @@ ccsysurl = "https://ccsystems.dannysmc.com/ccsystems.php"
 -- Code:
 
 function client.getapi()
+	-- Grab the API
 	local ok, err = pcall( function()
+		-- Check for http
 		if http then
 			aa = aa or {}
-			local a = http.get("https://vault.dannysmc.com/lua/api/dannysmcapi.lua")
+			local a = http.get("https://vault.dannysmc.com/lua/api/dannysmcapi.lua") -- url
 			a = a.readAll()
 			local env = {}
 			a = loadstring(a)
@@ -49,6 +55,7 @@ function client.getapi()
 			return false
 		end
 	end)
+	-- try 3 times to download API.
 	if not ok then
 		if nTries == 3 then
 			print("Api failed to download 3 times, running shell instead.")
@@ -64,6 +71,7 @@ function client.getapi()
 			client.getapi()
 		end
 	else
+		-- run core program in protected call to catch any errors and direct them to client.crash(error_message)
 		local ok, err = pcall(function ()
 			client.main()
 		end)
@@ -74,32 +82,43 @@ function client.getapi()
 end
 
 function client.draw.bar(screenname)
+	-- Menu bar at the top of the screen.
 	draw.box(1, 51, 1, 1, " ", "grey", "grey")
 	draw.texta("Hive:", 1, 1, false, "cyan", "grey")
 	draw.texta(screenname, 7, 1, false, "white", "grey")
+	-- This is an api function will always give 5 characters for the time. so 01:00 and 17:00 etc.
 	draw.texta(misc.time(), 47, 1, false, "lime", "grey")
 end
 
 function client.main()
+	-- Main loading script, has logo and starts up redent connections.
 	col.screen("white")
 	local logo = paintutils.loadImage("/Hive/src/Assets/logo.lua")
 	paintutils.drawImage(logo, 8, 4)
+	-- The centered text function doesn't always work the best so add a space before the letter to even it out.
 	draw.textc(" Created by HiveDevTeam", 19, false, "red", "white")
 
 	sleep(2.5)
 
-	client.core.connect()
+	-- If not running in an emulator then run rednet hive server connect.
+	if not emulator then
+		client.core.connect()
+	end
 	client.core.menu()
 end
 
 function client.core.connect()
+	-- My api function -> Find a modem
 	local modemside = misc.find("modem")
+	-- if a modem can't be found error.
 	if not modemside then
 		printError("No modem attached!")
 	else
+		-- other wise open the rednet port.
 		rendet.open(modemside)
 	end
 
+	-- broadcast a ping to receive the serverid on the protocol "hivesystem" this is just for clients and will be properly paired when all is built.
 	rednet.broadcast("client_connect", "hivesystem")
 	serverid, message = rednet.receive("hivesystem", 2)
 	if serverid then
@@ -149,6 +168,7 @@ function client.draw.menuitems()
 end
 
 function client.core.menu()
+	-- Full menu
 	col.screen("white")
 	client.draw.bar("Menu")
 	client.draw.menuitems()
