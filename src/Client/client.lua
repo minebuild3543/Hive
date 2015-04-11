@@ -44,21 +44,21 @@ function client.getapi()
 			setfenv(a, env)
 			local status, err = pcall(a, unpack(aa))
 			if (not status) and err then
-				printError("Error loading api")
+				printError("ERROR: API loading failed")
 				return false
 			end
 			local returned = err
 			env = env
 			_G["progutils"] = env
 		else
-			printError("HTTP needs to be enabled!")
+			printError("ERROR: API download failed, enable HTTP API in CC config file")
 			return false
 		end
 	end)
 	-- try 3 times to download API.
 	if not ok then
 		if nTries == 3 then
-			print("Api failed to download 3 times, running shell instead.")
+			print("ERROR: API download failed 3 times, running shell instead")
 			sleep(2.5)
 			term.clear()
 			term.setCursorPos(1,1)
@@ -66,7 +66,7 @@ function client.getapi()
 		else
 			nTries = nTries + 1
 			print(err)
-			print("Failed to get api, re-trying...")
+			print("ERROR: API download failed, re-trying. Attempt #"..nTries)
 			sleep(1)
 			client.getapi()
 		end
@@ -112,9 +112,9 @@ function client.core.connect()
 	local modemside = misc.find("modem")
 	-- if a modem can't be found error.
 	if not modemside then
-		printError("No modem attached!")
+		printError("ERROR: RedNet failure; device not attached")
 	else
-		-- other wise open the rednet port.
+		-- otherwise open the rednet port.
 		rendet.open(modemside)
 	end
 
@@ -124,7 +124,7 @@ function client.core.connect()
 	if serverid then
 		return true
 	else
-		printError("Can't connect to server")
+		printError("ERROR: RedNet failure; failed to connect to HiveMind server")
 	end
 end
 
