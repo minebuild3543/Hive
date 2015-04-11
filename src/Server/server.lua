@@ -91,7 +91,7 @@ function server.crash(err)
 	-- This is just temporary.
 
 	col.screen("white")
-	server.draw.bar("Crash")
+	server.draw.bar("HIVEMIND SYSTEM CRASH INTERCEPTED")
 	for k, v in ipairs(data.wordwrap(err, 51)) do
 		draw.texta(v, 1, 2+k, false, "cyan", "white")
 	end
